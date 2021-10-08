@@ -62,21 +62,21 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                 onPressed:(){
                   //deneme();
-                  print(widget.student5[0].firstNames);
-                  print('Student');
+                  print(widget.student5[widget.index1].firstNames);
                   //Navigator.push(context,MaterialPageRoute(builder: (context)=>Ekran()));
                   Navigator.push(context,MaterialPageRoute(builder: (context)=>Ekran(widget.student5[widget.index1])));
                 },
                 child: Text('Student'),
               ),
               ElevatedButton(
-                onPressed:(){                  print(widget.ortak.sinif);
+                onPressed:(){
+                  print(widget.ortak.sinif);
                 },
                 child: Text('Sinif'),
               ),
               ElevatedButton(
                 onPressed:(){
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=>Form5(widget.isim)));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>Form5(widget.student5.last)));
                   print('Form');
                 },
                 child: Text('Form'),
