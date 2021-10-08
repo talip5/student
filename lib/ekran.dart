@@ -23,7 +23,7 @@ class _EkranState extends State<Ekran> {
     return Scaffold(
         appBar: AppBar(
           title:Text(
-            'Ekran 35'
+            'Ekran 350'
           ),
         ),
         body:Center(
